@@ -5,7 +5,7 @@ import redis
 import os
 import json
 
-# Flask backend application
+# Flask backend application1
 app = Flask(__name__)
 
 # CORS Configuration - Only allow requests from your frontend
