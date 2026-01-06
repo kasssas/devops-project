@@ -426,14 +426,14 @@ jobs:
           git add Project/helm/devops-app/values.yaml
           if ! git diff --staged --quiet; then
             git commit -m "chore: update image tags to new versions"
-            echo "� Pushing updates to main (with retry logic)..."
+            echo "Pushing updates to main (with retry logic)..."
             for i in {1..3}; do
               git pull --rebase origin main
               if git push origin HEAD:main; then
-                echo "✅ Successfully pushed updates"
+                echo "Successfully pushed updates"
                 break
               fi
-              echo "⚠️ Push failed, retrying in 5s... ($i/3)"
+              echo "Push failed, retrying in 5s... ($i/3)"
               sleep 5
             done
           fi
