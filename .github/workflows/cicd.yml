@@ -155,7 +155,10 @@ jobs:
           # Only commit and push if there are changes
           if ! git diff --staged --quiet; then
             git commit -m "chore: update frontend scan reports"
-            git push origin main
+            echo "📊 Debug Info:"
+            git branch
+            git remote -v
+            git push origin HEAD:main
           else
             echo "No changes to scan reports, skipping commit"
           fi
@@ -329,7 +332,10 @@ jobs:
           # Only commit and push if there are changes
           if ! git diff --staged --quiet; then
             git commit -m "chore: update backend scan reports"
-            git push origin main
+            echo "📊 Debug Info:"
+            git branch
+            git remote -v
+            git push origin HEAD:main
           else
             echo "No changes to scan reports, skipping commit"
           fi
@@ -407,7 +413,10 @@ jobs:
           git add Project/helm/devops-app/values.yaml
           if ! git diff --staged --quiet; then
             git commit -m "chore: update image tags to new versions"
-            git push origin main
+            echo "📊 Debug Info:"
+            git branch
+            git remote -v
+            git push origin HEAD:main
           fi
 
   argocd-sync:
