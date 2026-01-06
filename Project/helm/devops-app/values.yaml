@@ -18,7 +18,7 @@ frontend:
   replicaCount: 1
   image:
     repository: mostafakassas55/frontend
-    tag: v1.0.2
+    tag: v1.0.3
     pullPolicy: Always
   service:
     port: 80
