@@ -58,7 +58,7 @@ backend:
   replicaCount: 1
   image:
     repository: mostafakassas55/backend
-    tag: v1.0.22
+    tag: v1.0.0
     pullPolicy: Always
   service:
     port: 5000
