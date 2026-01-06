@@ -1,7 +1,7 @@
 # Security Scan Report (Trivy)
 
-**Image:** mostafakassas55/frontend:v1.0.2
-**Scan Date:** 2026-01-06 22:26:40
+**Image:** mostafakassas55/frontend:v1.0.3
+**Scan Date:** 2026-01-06 22:35:39
 **Severity Levels:** CRITICAL, HIGH, MEDIUM, LOW
 
 ```
@@ -11,7 +11,7 @@ Report Summary
 ┌─────────────────────────────────────────────────┬────────┬─────────────────┬─────────┐
 │                     Target                      │  Type  │ Vulnerabilities │ Secrets │
 ├─────────────────────────────────────────────────┼────────┼─────────────────┼─────────┤
-│ mostafakassas55/frontend:v1.0.2 (alpine 3.23.2) │ alpine │        0        │    -    │
+│ mostafakassas55/frontend:v1.0.3 (alpine 3.23.2) │ alpine │        0        │    -    │
 └─────────────────────────────────────────────────┴────────┴─────────────────┴─────────┘
 Legend:
 - '-': Not scanned
