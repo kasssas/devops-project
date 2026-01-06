@@ -1,6 +1,6 @@
 FROM nginx:alpine
 
-# Remove default nginx static assets
+# Remove default nginx static asset
 RUN rm -rf /usr/share/nginx/html/*
 
 # Create a non-root user and group
